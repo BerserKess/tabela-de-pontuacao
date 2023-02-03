@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@100&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Tabela de pontos</title>
+	</head>
+	<body>
+		<header>
+			<div class="header-container">
+				<h1 class="header-title">Tabela de pontos</h1>
+				<h3 class="header-subtitle">
+					Classificação de jogos entre pessoas
+				</h3>
+				<img src="" alt="" class="header-logo" />
+			</div>
+		</header>
+		<section>
+			<div class="form-container">
+				<label for="player-name">Nome do Jogador:</label>
+				<input
+					type="text"
+					id="player-name"
+					name="player-name"
+					placeholder="Jogador"
+					requiered
+				/>
+				<button class="submit-btn" onclick="playerRegister()">
+					Cadastrar
+				</button>
+			</div>
+			<div class="table-container">
+				<table>
+					<thead>
+						<tr>
+							<th>Nome</th>
+							<th>Vitórias</th>
+							<th>Empates</th>
+							<th>Derrotas</th>
+							<th>Pontos</th>
+							<th colspan="5">Ações</th>
+						</tr>
+					</thead>
+					<tbody id="player-table"></tbody>
+				</table>
+			</div>
+			<button onclick="deleteAllPlayers()" class="btn-delete">
+				Apagar Jogadores
+			</button>
+		</section>
+		<script src="./js/index.js"></script>
+	</body>
+</html>

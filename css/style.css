@@ -1,0 +1,100 @@
+* {
+	text-align: center;
+}
+body {
+	font-family: 'Roboto Mono', monospace;
+	min-height: 400px;
+	background-image: url('https://www.alura.com.br/assets/img/imersoes/dev-2021/tabela-classificacao-bg.png');
+	background-color: #111;
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+table {
+	border: 2px solid #f6f6;
+	border-radius: 5px;
+	font-size: 20px;
+}
+
+.header-container {
+	text-align: center;
+	padding: 20px;
+	/* height: 100vh; */
+}
+
+.header-title {
+	color: #fff;
+	margin: 0 0 5px;
+}
+
+.header-subtitle {
+	color: #fff;
+	margin-top: 5px;
+}
+.form-container {
+	display: flex;
+	justify-content: center;
+	gap: 10px;
+	color: #f6f6f6;
+}
+.form-container input {
+	padding: 3px;
+}
+.submit-btn {
+	padding: 0 10px;
+	background-color: transparent;
+	transition: 0.5s;
+	border: 2px solid #f6f6f6;
+	border-radius: 5px;
+	color: #f6f6f6;
+	cursor: pointer;
+}
+.submit-btn:hover,
+.btn-delete:hover {
+	background-color: #942be2;
+}
+.table-container {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding: 20px;
+}
+
+th,
+tr,
+td {
+	border: 2px solid #455b68;
+	color: #fff;
+}
+
+.btn-actions {
+	background-color: #6a2a5833;
+	color: #f6f6f6;
+	cursor: pointer;
+	padding: 10px 30px;
+	font-size: 16px;
+	font-family: 'Roboto Mono', monospace;
+	transition: 0.5;
+	border: 0;
+	width: auto;
+}
+.btn-victory:hover {
+	background-color: #32cd30;
+}
+.btn-tie:hover {
+	background-color: #e1c340;
+}
+.btn-defeat:hover {
+	background-color: #ff2511;
+}
+
+.btn-delete {
+	background-color: transparent;
+	border: 2px solid #f6f6f6;
+	border-radius: 5px;
+	padding: 10px;
+	color: #f6f6f6;
+	cursor: pointer;
+	font-size: 16px;
+}
